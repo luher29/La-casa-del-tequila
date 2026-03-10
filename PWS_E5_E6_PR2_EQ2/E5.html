@@ -1,0 +1,79 @@
+<!--Quién sabe cual es el ejercicio 4, pero supongo que es lo de los formularios-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../PWS_E5PR2_EQ2/Style.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+    </style>
+    </style>
+
+    <header>
+        <img src="../img/logo_tequila.png" alt="logo_tequila">
+        <h1>Control de Inventario </h1>
+        <nav>
+            <a href="../PWS_E3PR2_EQ2/E3.html">Inicio</a>
+        </nav>
+    </header>
+    <br>
+    <form action="../PWS_E2PR2_EQ2/E2.html">
+        <fieldset>
+            <legend>Añadir Mercancia</legend>
+
+            <label for="txtName" style="font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Nombre del Producto:*</label><br>
+            <input type="text" id="txtName" name="txtName" placeholder="Oso Negro" required>
+            <br><br>
+
+            <label for="opTypeTequila">Tipo de Tequila:</label>
+            <select id="opTypeTequila" name="opTypeTequila">
+                <option value="white">Blanco</option>
+                <option value="reposado">Reposado</option>
+                <option value="aged">Añejo</option>
+                <option value="crystal">Cristalino</option>
+                <option value="gold">Oro</option>
+            </select>
+            <br><br>
+
+            <label for="txtPieces">Piezas:*</label><br>
+            <input type="number" id="txtPieces" name="txtPieces" placeholder="5" min="0" max="50" required>
+            <br><br>
+
+            <label>Capacidad:</label><br>
+            <input type="radio" name="rbMl" id="rb750ml" value="750" checked>
+            <label for="rb750ml">750 ml</label>
+            <input type="radio" name="rbMl" id="rb700ml" value="700">
+            <label for="rb700ml">700 ml</label>
+            <input type="radio" name="rbMl" id="rb1L" value="1000">
+            <label for="rb1L">1 L</label>
+            <input type="radio" name="rbMl" id="rb375ml" value="375">
+            <label for="rb375ml">375 ml</label>
+            <br><br>
+
+            <label for="txtDescription">Descripción:</label><br>
+            <textarea class="textarea" name="txtDescription" id="txtDescription" rows="6" cols="30"
+                placeholder="Tequila especialmente para los karnales, no apto para niñas finas."></textarea>
+            <br><br>
+
+            <label for="txtPrice">Precio Unitario ($MXN):*</label><br>
+            <input type="number" name="txtPrice" id="txtPrice" min="0" placeholder="1500" required>
+            <br><br>
+
+            <label for="photo">Imagen Representativa:</label>
+            <input type="file" name="photo" id="photo" accept="image/*">
+            <br><br>
+
+            <input type="submit" value="Guardar">
+        </fieldset>
+    </form>
+</body>
+
+</html>
